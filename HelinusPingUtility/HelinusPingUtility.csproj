@@ -11,8 +11,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyVersion>24.8.17.38</AssemblyVersion>
-    <FileVersion>24.8.17.38</FileVersion>
+    <AssemblyVersion>25.4.11.47</AssemblyVersion>
+    <FileVersion>25.4.11.47</FileVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <Version>1.1.0</Version>
     <Company>Helinus</Company>

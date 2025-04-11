@@ -49,6 +49,7 @@ namespace HelinusPingUtility
                     {
                         this.FailedPings += 1;
                         this.PingTime = -1;
+                
                     }
                     if (reply.Status == IPStatus.Success && reply.RoundtripTime==0)
                         this.PingTime = 1;

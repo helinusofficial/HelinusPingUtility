@@ -66,6 +66,7 @@
             panelControls = new System.Windows.Forms.Panel();
             labelLogoDetail = new System.Windows.Forms.Label();
             labelLogo = new System.Windows.Forms.Label();
+            checkBoxPingFailedSound = new System.Windows.Forms.CheckBox();
             statusStripMain.SuspendLayout();
             menuStripMain.SuspendLayout();
             groupBoxStatus.SuspendLayout();
@@ -165,6 +166,7 @@
             // groupBoxStatus
             // 
             groupBoxStatus.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBoxStatus.Controls.Add(checkBoxPingFailedSound);
             groupBoxStatus.Controls.Add(labelLocalIP);
             groupBoxStatus.Controls.Add(label7);
             groupBoxStatus.Controls.Add(labelAveragePing);
@@ -413,6 +415,16 @@
             labelLogo.TabIndex = 2;
             labelLogo.Text = "Helinus";
             // 
+            // checkBoxPingFailedSound
+            // 
+            checkBoxPingFailedSound.AutoSize = true;
+            checkBoxPingFailedSound.Location = new System.Drawing.Point(679, 54);
+            checkBoxPingFailedSound.Name = "checkBoxPingFailedSound";
+            checkBoxPingFailedSound.Size = new System.Drawing.Size(121, 19);
+            checkBoxPingFailedSound.TabIndex = 14;
+            checkBoxPingFailedSound.Text = "Ping Failed Sound";
+            checkBoxPingFailedSound.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -484,5 +496,6 @@
         private System.Windows.Forms.Panel panelControls;
         private System.Windows.Forms.Label labelLogoDetail;
         private System.Windows.Forms.Label labelLogo;
+        private System.Windows.Forms.CheckBox checkBoxPingFailedSound;
     }
 }

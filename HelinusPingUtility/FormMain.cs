@@ -46,6 +46,7 @@ namespace HelinusPingUtility
         {
             ShutdownApp();
         }
+
         private void toolStripMenuItemStart_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBoxIP.Text.Trim()))
@@ -127,14 +128,17 @@ namespace HelinusPingUtility
                     tempPingResult = iPClass.PingIt();
 
                     if (iPClass.PingTime >= 0)
-                        PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= "+iPClass.TTL+"         Ping Time: " + iPClass.PingTime.ToString() + " ms" , false);
+                        PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= " + iPClass.TTL + "         Ping Time: " + iPClass.PingTime.ToString() + " ms", false);
                     else
                     {
-                        if(iPClass.Address !=null && tempPingResult.Contains("Success"))
-                           PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= " +iPClass.TTL + "         Ping Time: " + iPClass.PingTime.ToString() + " ms", true);
+                        if (checkBoxPingFailedSound.Checked)
+                            Console.Beep(5000, 200);
+                        if (iPClass.Address != null && tempPingResult.Contains("Success"))
+                            PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= " + iPClass.TTL + "         Ping Time: " + iPClass.PingTime.ToString() + " ms", true);
                         else if (iPClass.Address != null && !tempPingResult.Contains("Success"))
                             PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t Timeout", true);
                         else
+
                             PrintLogMessage(iPClass.IP + "       There is no IP address available / check your network connection!", true);
                     }
 
