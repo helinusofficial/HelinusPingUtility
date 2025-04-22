@@ -132,7 +132,8 @@ namespace HelinusPingUtility
                     else
                     {
                         if (checkBoxPingFailedSound.Checked)
-                            Console.Beep(5000, 200);
+                            Console.Beep(5000, 100);
+
                         if (iPClass.Address != null && tempPingResult.Contains("Success"))
                             PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= " + iPClass.TTL + "         Ping Time: " + iPClass.PingTime.ToString() + " ms", true);
                         else if (iPClass.Address != null && !tempPingResult.Contains("Success"))
@@ -207,6 +208,7 @@ namespace HelinusPingUtility
             {
                 lock (this)
                 {
+                    if(checkBoxWriteLogFile.Checked)
                     LogService.LogIt(logMessage);
 
                     if (red)
