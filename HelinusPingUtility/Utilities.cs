@@ -27,7 +27,6 @@ namespace HelinusPingUtility
             }
             catch
             {
-
             }
 
             return string.Empty;
