@@ -11,8 +11,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyVersion>25.4.22.58</AssemblyVersion>
-    <FileVersion>25.4.22.58</FileVersion>
+    <AssemblyVersion>25.6.21.60</AssemblyVersion>
+    <FileVersion>25.6.21.60</FileVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <Version>1.1.0</Version>
     <Company>Helinus</Company>
@@ -21,5 +21,11 @@
     <Copyright>@ 2024</Copyright>
     <PackageProjectUrl>https://www.helinus.com</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="config.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
