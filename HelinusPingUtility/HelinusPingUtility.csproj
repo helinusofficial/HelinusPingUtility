@@ -11,8 +11,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyVersion>25.6.21.60</AssemblyVersion>
-    <FileVersion>25.6.21.60</FileVersion>
+    <AssemblyVersion>2026.1.28.70</AssemblyVersion>
+    <FileVersion>2026.1.28.70</FileVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <Version>1.1.0</Version>
     <Company>Helinus</Company>
@@ -23,6 +23,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="beep.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="config.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

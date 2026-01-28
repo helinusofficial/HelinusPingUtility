@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.DirectoryServices;
 using System.Drawing;
+using System.Media;
 using System.Net.NetworkInformation;
+using System.Numerics;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
@@ -14,6 +16,7 @@ namespace HelinusPingUtility
     public partial class FormMain : Form
     {
         #region VariableRegion
+        SoundPlayer player;
         internal Utilities utilities;
         Thread th_StartPinging;
         int th_SendPing_Timer = 1000;//1 second
@@ -29,6 +32,7 @@ namespace HelinusPingUtility
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
+            player = new SoundPlayer("beep.wav");
             utilities = new Utilities();
             toolStripStatusLabelVer.Text = "Ver:" + utilities.ShowAppVersion();
             labelLocalIP.Text = IPClass.FindLocalIPAddress();
@@ -132,7 +136,7 @@ namespace HelinusPingUtility
                     else
                     {
                         if (checkBoxPingFailedSound.Checked)
-                            Console.Beep(5000, 100);
+                            player.Play();
 
                         if (iPClass.Address != null && tempPingResult.Contains("Success"))
                             PrintLogMessage(iPClass.IP + "       " + iPClass.Address.ToString() + "\t " + tempPingResult + "        TTL= " + iPClass.TTL + "         Ping Time: " + iPClass.PingTime.ToString() + " ms", true);

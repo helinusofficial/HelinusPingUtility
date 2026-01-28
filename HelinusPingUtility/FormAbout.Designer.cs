@@ -71,7 +71,7 @@
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(251, 15);
             label5.TabIndex = 15;
-            label5.Text = "All Right Reserved . Copyright © Helinus  2024";
+            label5.Text = "All Right Reserved . Copyright © Helinus  2026";
             // 
             // label4
             // 
