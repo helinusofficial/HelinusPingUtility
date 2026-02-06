@@ -161,7 +161,7 @@ namespace HelinusPingUtility
                     });
                     labelAveragePing.BeginInvoke((MethodInvoker)delegate ()
                     {
-                        labelAveragePing.Text = iPClass.AveragePing.ToString() + " s";
+                        labelAveragePing.Text = iPClass.AveragePing.ToString() + " ms";
                     });
 
                 }
