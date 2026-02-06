@@ -131,10 +131,10 @@
             linkLabelCompanyLink.Location = new System.Drawing.Point(110, 103);
             linkLabelCompanyLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             linkLabelCompanyLink.Name = "linkLabelCompanyLink";
-            linkLabelCompanyLink.Size = new System.Drawing.Size(137, 15);
+            linkLabelCompanyLink.Size = new System.Drawing.Size(142, 15);
             linkLabelCompanyLink.TabIndex = 20;
             linkLabelCompanyLink.TabStop = true;
-            linkLabelCompanyLink.Text = "http://www.helinus.com";
+            linkLabelCompanyLink.Text = "https://www.helinus.com";
             linkLabelCompanyLink.Click += linkLabelCompanyLink_Click;
             // 
             // label8
