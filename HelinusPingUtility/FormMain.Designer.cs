@@ -238,9 +238,9 @@
             labelAveragePing.Location = new System.Drawing.Point(560, 55);
             labelAveragePing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelAveragePing.Name = "labelAveragePing";
-            labelAveragePing.Size = new System.Drawing.Size(12, 15);
+            labelAveragePing.Size = new System.Drawing.Size(31, 15);
             labelAveragePing.TabIndex = 11;
-            labelAveragePing.Text = "s";
+            labelAveragePing.Text = "(ms)";
             // 
             // label6
             // 
