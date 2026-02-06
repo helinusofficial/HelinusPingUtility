@@ -235,7 +235,7 @@
             // labelAveragePing
             // 
             labelAveragePing.AutoSize = true;
-            labelAveragePing.Location = new System.Drawing.Point(560, 55);
+            labelAveragePing.Location = new System.Drawing.Point(551, 55);
             labelAveragePing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelAveragePing.Name = "labelAveragePing";
             labelAveragePing.Size = new System.Drawing.Size(23, 15);
@@ -255,7 +255,7 @@
             // labelFailedPings
             // 
             labelFailedPings.AutoSize = true;
-            labelFailedPings.Location = new System.Drawing.Point(401, 55);
+            labelFailedPings.Location = new System.Drawing.Point(395, 55);
             labelFailedPings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelFailedPings.Name = "labelFailedPings";
             labelFailedPings.Size = new System.Drawing.Size(13, 15);
@@ -275,7 +275,7 @@
             // labelPacketLoss
             // 
             labelPacketLoss.AutoSize = true;
-            labelPacketLoss.Location = new System.Drawing.Point(253, 55);
+            labelPacketLoss.Location = new System.Drawing.Point(243, 55);
             labelPacketLoss.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPacketLoss.Name = "labelPacketLoss";
             labelPacketLoss.Size = new System.Drawing.Size(23, 15);
@@ -288,14 +288,14 @@
             label4.Location = new System.Drawing.Point(175, 55);
             label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(74, 15);
+            label4.Size = new System.Drawing.Size(71, 15);
             label4.TabIndex = 6;
-            label4.Text = "Packet Loss: ";
+            label4.Text = "Packet Loss:";
             // 
             // labelPingAmount
             // 
             labelPingAmount.AutoSize = true;
-            labelPingAmount.Location = new System.Drawing.Point(96, 55);
+            labelPingAmount.Location = new System.Drawing.Point(93, 55);
             labelPingAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPingAmount.Name = "labelPingAmount";
             labelPingAmount.Size = new System.Drawing.Size(13, 15);
@@ -308,9 +308,9 @@
             label3.Location = new System.Drawing.Point(15, 55);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(84, 15);
+            label3.Size = new System.Drawing.Size(81, 15);
             label3.TabIndex = 4;
-            label3.Text = "Ping Amount: ";
+            label3.Text = "Ping Amount:";
             // 
             // labelStatus
             // 
